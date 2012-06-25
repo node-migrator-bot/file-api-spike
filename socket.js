@@ -1,4 +1,4 @@
-var sys = require("sys")
+var util = require('util')
   , fs = require("fs")
   , path = require("path")
   , http = require("http")
@@ -51,5 +51,5 @@ exports.start = function(port){
 }
 
 var log = function(str){
-  console.log(sys.inspect(str))
+  console.log(util.inspect(str))
 }
